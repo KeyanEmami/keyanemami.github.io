@@ -288,13 +288,13 @@
 .u-section-4 .u-text-1 {
   font-weight: 700;
   font-size: 3rem;
-  margin: 39px auto 0 38px;
+  margin: 37px auto 0 73px;
 }
 
 .u-section-4 .u-gallery-1 {
   height: 561px;
   width: 1063px;
-  margin: 37px auto 60px;
+  margin: 44px 0 60px auto;
 }
 
 .u-section-4 .u-gallery-inner-1 {
@@ -400,24 +400,24 @@
 }
 
 .u-section-5 .u-container-layout-1 {
-  padding: 17px 0;
+  padding: 5px 0;
 }
 
 .u-section-5 .u-text-1 {
   font-size: 3rem;
   font-weight: 700;
-  margin: 0 30px;
+  margin: 0 91px 0 -31px;
 }
 
 .u-section-5 .u-line-1 {
   transform-origin: left center 0px;
   width: 1168px;
-  margin: 14px -48px 0 auto;
+  margin: 23px auto 0 -31px;
 }
 
 .u-section-5 .u-text-2 {
   font-size: 1.125rem;
-  margin: 13px 30px 0;
+  margin: 15px 82px 0 -22px;
 }
 
 @media (max-width: 1199px) {
@@ -436,7 +436,7 @@
 
   .u-section-5 .u-line-1 {
     width: 940px;
-    margin-right: 0;
+    margin-left: 0;
   }
 
   .u-section-5 .u-text-2 {
