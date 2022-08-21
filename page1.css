@@ -411,8 +411,8 @@
 
 .u-section-5 .u-line-1 {
   transform-origin: left center 0px;
-  width: 1170px;
-  margin: 20px 0 0 auto;
+  width: 1331px;
+  margin: 20px -71px 0;
 }
 
 .u-section-5 .u-text-2 {
@@ -440,6 +440,8 @@
 
   .u-section-5 .u-line-1 {
     width: 940px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .u-section-5 .u-text-2 {
