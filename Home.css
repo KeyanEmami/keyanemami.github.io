@@ -1,31 +1,41 @@
  .u-section-1 {
-  background-image: url("images/ComingSoonPhoto.png");
+  min-height: 100vh;
 }
 
-.u-section-1 .u-sheet-1 {
-  min-height: 500px;
+.u-section-1 .u-image-1 {
+  width: 1289px;
+  height: 714px;
+  margin: -76px auto 0 calc(((100% - 1140px) / 2) + -99px);
 }
 
 @media (max-width: 1199px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 412px;
+  .u-section-1 .u-image-1 {
+    width: 940px;
+    height: 521px;
+    margin-left: calc(((100% - 940px) / 2));
   }
 }
 
 @media (max-width: 991px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 316px;
+  .u-section-1 .u-image-1 {
+    width: 720px;
+    height: 399px;
+    margin-left: calc(((100% - 720px) / 2));
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 237px;
+  .u-section-1 .u-image-1 {
+    width: 540px;
+    height: 299px;
+    margin-left: calc(((100% - 540px) / 2));
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 149px;
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 188px;
+    margin-left: calc(((100% - 340px) / 2));
   }
 }
