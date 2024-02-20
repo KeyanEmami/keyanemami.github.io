@@ -95,6 +95,14 @@
             padding: 10px;
         }
 
+        .menu-vertical {
+            display: none; /* Hide initially */
+            flex-direction: column; /* Display vertically */
+        }
+        .menu-toggle {
+            cursor: pointer;
+        }
+
         /* Styles for the navigation menu */
         @media screen and (max-width: 768px) { /* Adjust the max-width as needed */
             .menu-toggle {
@@ -104,22 +112,37 @@
                 display: none; /* Hide the navigation menu by default on smaller screens */
             }
         }
+        @media only screen and (max-width: 600px) {
+        nav#navHorizontal {
+            display: none; /* Hide horizontal menu on mobile */
+        }
+        nav#navVertical {
+            display: block; /* Show vertical menu on mobile */
+        }
+    }
 
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Keyan Emami</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Three-line menu icon -->
-</header>
-
-<nav id="navMenu"> <!-- Navigation menu -->
-    <a href="index.html">Home</a>
-    <a href="bio.html">Biography</a>
-    <a href="works.html">Works</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <header>
+        <h1>Keyan Emami</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Three-line menu icon -->
+    </header>
+    
+    <nav id="navHorizontal"> <!-- Horizontal navigation menu -->
+        <a href="index.html">Home</a>
+        <a href="bio.html">Biography</a>
+        <a href="works.html">Works</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <nav class="menu-vertical" id="navVertical"> <!-- Vertical navigation menu -->
+        <a href="index.html">Home</a>
+        <a href="bio.html">Biography</a>
+        <a href="works.html">Works</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 <img src="ArashSafavi-2828.jpg" alt="Description of the image" class="auto-height">
 
@@ -283,13 +306,26 @@
 
 <script>
     function toggleMenu() {
-        var navMenu = document.getElementById("navMenu");
-        if (navMenu.style.display === "block") {
-            navMenu.style.display = "none";
+        var navHorizontal = document.getElementById("navHorizontal");
+        var navVertical = document.getElementById("navVertical");
+        if (navHorizontal.style.display === "block" || navHorizontal.style.display === "") {
+            navHorizontal.style.display = "none";
+            navVertical.style.display = "block";
         } else {
-            navMenu.style.display = "block";
+            navHorizontal.style.display = "block";
+            navVertical.style.display = "none";
         }
     }
+    
+    // Close the menu when clicking outside of it
+    window.addEventListener('click', function(e){
+        var navHorizontal = document.getElementById("navHorizontal");
+        var menuToggle = document.querySelector('.menu-toggle');
+        if (!menuToggle.contains(e.target) && !navHorizontal.contains(e.target)) {
+            navHorizontal.style.display = 'none';
+            document.getElementById("navVertical").style.display = 'none';
+        }
+    });
 </script>
 
 </body>
