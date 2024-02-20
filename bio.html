@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Composer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #f7f7f7;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        nav {
+            background-color: transparent;
+            text-align: right;
+            padding: 0.5em;
+            position: fixed;
+            width: 100%;
+            top: 40px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #001f3f;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #001527;
+            border-color: #001f3f;
+        }
+
+        section {
+            padding: 60px 12px 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-right: 45px;
+        }
+
+        /* Override for a specific image with class "auto-height" */
+        img.auto-height {
+            height: 600px;
+        }
+
+        #bio {
+            padding-bottom: 100px;
+            padding-top: 0px;
+        }
+
+        #contact {
+            padding-bottom: 100px;
+            padding-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 2px solid #001f3f;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .grey-text {
+            color: grey;
+        }
+
+        #long-bio {
+            display: none;
+        }
+
+        #toggle-button {
+            background-color: #001f3f;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Keyan Emami</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#" onclick="toggleBio()">Biography</a>
+        <a href="works.html">Works</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="bio">
+        <!-- Image with auto height -->
+        <img src="Keyan_Juno_Bio.JPG" alt="Keyan Headshot" class="auto-height">
+
+        <!-- Short Bio -->
+        <div id="short-bio">
+            <h2>Short Bio</h2>
+            <p>Keyan Emami, a JUNO-nominated composer, is acclaimed for his orchestral, vocal and piano compositions. His music has been performed and recorded widely in Canada and abroad. Critics praise his contemporary works, inspired by Persian literature and various musical forms, as “eloquent and poignant”, and “dark and moving”. As the co-founder and Artistic Director of ICOT, Keyan holds a doctorate in composition from the University of Toronto. Additionally, he serves as an RCM Certified Music Teacher and Adjudicator at The Royal Conservatory College of Examiners. Explore more at www.keyanemami.com.</p>
+        </div>
+
+        <!-- Long Bio (initially hidden) -->
+        <div id="long-bio">
+            <h2>Long Bio</h2>
+            <p>Keyan Emami, a JUNO-nominated Canadian-Persian composer and dedicated music educator, is renowned for his contemporary extended tonal language and innovative sonic texture, often drawing inspiration from Persian literature and various musical forms. His compositions for orchestra, voice, and piano have been widely performed by leading orchestras, ensembles, and musicians both in Canada and internationally, and have been featured at prestigious venues such as the Four Seasons Centre, Toronto Centre for the Arts, Aga Khan Museum, and Roy Thompson Hall.</p>
+
+            <p>Recipient of multiple grants, including the Canada Council for the Arts Grant, Ontario Arts Council Grant, and Toronto Arts Council Grant, Keyan is also an Associate Composer at the Canadian Music Centre, and a member of the Canadian League of Composers and SOCAN. As the artistic director, co-founder, and co-composer at ICOT, a non-profit organization that has produced over 60 new works since 2011, Keyan demonstrates his commitment to bridging cultures through music.</p>
+
+            <p>Keyan completed his doctorate in music composition at the University of Toronto in 2020. His academic journey, including a B.Eng. in Polymer Engineering and an M.Mus. in Music Composition, earned with distinction, reflects his multidimensional approach to creativity. Notably, he was awarded the Best Master’s Thesis Prize for his Symphony in Three Movements. His principal teachers during academic studies were Christos Hatzis, Alexander Rapoport, and Norbert Palej, alongside significant private study with Mehran Rouhani and Ahmad Pejman.</p>
+
+            <p>Keyan currently serves as an RCM Certified Music Teacher and Adjudicator at the Royal Conservatory of Music College of Examiners, following previous academic positions at the University of Toronto and Tehran University of Art. Additionally, as the founder and academic manager of Key Music, he offers exclusive private piano, composition, and theory lessons at his professional music studio in Newmarket, both in-person and via video conferencing, ensuring personalized instruction and mentorship. Explore more at www.keyanemami.com.</p>
+
+        </div>
+
+        <!-- Toggle Button -->
+        <button id="toggle-button" onclick="toggleBio()">Long Bio</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Keyan Emami - Composer</p>
+    </footer>
+
+    <script>
+        function toggleBio() {
+            var shortBio = document.getElementById('short-bio');
+            var longBio = document.getElementById('long-bio');
+            var toggleButton = document.getElementById('toggle-button');
+
+            // Toggle visibility
+            if (shortBio.style.display === 'none') {
+                shortBio.style.display = 'block';
+                longBio.style.display = 'none';
+                toggleButton.textContent = 'Long Bio';
+            } else {
+                shortBio.style.display = 'none';
+                longBio.style.display = 'block';
+                toggleButton.textContent = 'Short Bio';
+            }
+        }
+    </script>
+
+</body>
+</html>

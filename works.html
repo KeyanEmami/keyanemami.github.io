@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Composer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #f7f7f7;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        nav {
+            background-color: transparent;
+            text-align: right;
+            padding: 0.5em;
+            position: fixed;
+            width: 100%;
+            top: 40px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #001f3f;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #001527;
+            border-color: #001f3f;
+        }
+
+        section {
+            padding: 0px 150px 80px;
+        }
+
+        img {
+            max-width: 100%;
+            height: 500px;
+            display: block;
+            margin: 45px auto;
+        }
+
+        /* Override for a specific image with class "auto-height" */
+        img.auto-height {
+            height: auto;
+        }
+
+
+        #bio {
+            padding-bottom: 100px;
+            padding-top: 0px;
+        }
+
+        #contact {
+            padding-bottom: 100px;
+            padding-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 2px solid #001f3f;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .grey-text {
+            color: grey;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .solid-line {
+            border-top: 1px solid #000;
+            margin: 20px 0;
+        }
+        
+        .listen-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .listen-links a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .listen-links a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Keyan Emami</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bio.html">Biography</a>
+        <a href="works.html">Works</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+    <section id="Discography">
+        
+        <h2>Discography</h2>
+        <p>Explore compositions from three albums—"The Black Fish,' 'Recurrence,' and 'Persian Piano Night"—with studio-recorded performances. Dive into these musical journeys, available now on all major streaming platforms.</p>
+
+        <h3>THE BLACK FISH ALBUM</h3>
+        <p>“The Black Fish” receives JUNO Award nomination for Classical Composition of the Year (2023)! Order at iTunes, Bandcamp, Centrediscs</p>
+        <img src="8_The_Black_FIsh_Front_Cover_V2.jpg" alt="The Black FIsh Front Cover.jpg">
+        <div class="listen-links">
+            <a href="https://music.apple.com/ca/album/keyan-emami-the-black-fish/1649755197">Listen on Apple</a>
+            <a href="https://open.spotify.com/album/6eWk5sOHI9LiVOCSwppTAa?go=1&sp_cid=f74f5c0e95054f3f99a8f9f5784119c8&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=3433d4ad309d4786">Listen on Spotify</a>
+        </div>
+
+
+        <h3>KIAN IN RAINBOWS</h3>
+        <img src="2_Kian_In_Rainbows_Cover_Page.png">
+        <div class="listen-links">
+            <a href="https://music.apple.com/ca/album/recurrence/1708014181">Listen on Apple</a>
+            <a href="https://open.spotify.com/track/2v14z4n7hTJC9lgzbZLCqg">Listen on Spotify</a>
+        </div>
+
+
+        <h3>FIVE PIECES FOR PIANO</h3>
+        <img src="Persian_Piano_Night_Album_Cover.jpg">
+        <div class="listen-links">
+            <a href="https://music.apple.com/us/artist/keyan-emami/1294030212">Listen on Apple</a>
+            <a href="https://open.spotify.com/track/5eDyzXRNgHJF4uixUaCVkx">Listen on Spotify</a>
+        </div>
+        
+    </section>
+
+
+    <section id="Writing">
+        <div class="solid-line"></div>
+        
+        <h2>Writing</h2>
+        
+        <h3>MUSIC ON THE BORDERLAND: CONTEMPORARY IRANIAN COMPOSERS’ ODYSSEYS</h3>
+        <h4>(The University of Toronto Doctoral Research Project)</h4>
+        <p>This research paper delves into Iran's sociopolitical music landscape spanning from the 1979 Revolution to the conclusion of the Iran-Iraq war in 1988. It reveals the diverse influences at macro and personal levels, providing insights into the experiences of contemporary Iranian composers, including my own experience, amidst this transformative period. To access the paper, please click <a href="https://drive.google.com/file/d/1n3MPF9DV2Bdn7ByFDe6Xwki6XmJSwj6-/view?usp=sharing">here.</a></p>
+        <img src="MusicOnTheBorderland_CoverPage.jpeg">
+
+        <h3>Translation of 'FORM AND DESIGN' into Persian</h3>
+        <p>Presenting my translation of 'Form and Design' into Persian, commissioned by the prestigious Mahoor Institute and originally published by Cambridge University Press. This work introduces the fundamentals of musical forms and serves as an introductory exploration into musical structures. With meticulous attention to detail and numerous assignments, I've ensured clarity and readability for Persian audiences, offering valuable insight for students in music conservatories and colleges.</p>
+        <p>Preview a sample of the translated book <a href="https://drive.google.com/file/d/1oKA4gs9OPP5UDTSSea1krVAPYe7LosFO/view?usp=sharing">here.</a></p>
+        <img src="Form and Design_Cover_Page.jpeg">
+
+        <div class="solid-line"></div>
+
+        <p>Digital Score and Parts Availability: Please note that PDF files of scores and parts are available for purchase directly from the composer. For large orchestral and chamber works, rental options for parts can also be discussed.</p>
+
+        <div class="solid-line"></div>
+        
+    </section>
+
+    <section>
+        <div class="solid-line"></div>
+        <h2>VOCAL/CHORAL</h2>
+        <ul>
+            <li>
+                <strong>Elegy for Reera (2019)</strong><br>
+                For mixed choir, narrator, tār, piano. Commissioned by Sarv Choir.<br>
+                Duration: 5 minutes - <a href="https://youtu.be/Ch7-WULZ2eo">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>The Journey, Act III, Identity (2018)</strong><br>
+                For soprano, chamber ensemble. Commissioned by ICOT Orchestra.<br>
+                Duration: 11 minutes - <a href="https://youtu.be/4YJkb-oWGmw">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Recall the Eden with ICOT (2017)</strong><br>
+                For soprano, narrator, tār, tombak, strings. Commissioned by Orchestra Toronto and Thirteen Strings Chamber Orchestra.<br>
+                Duration: 17 minutes
+            </li>
+            <li>
+                <strong>Towards the Darkness (2016)</strong><br>
+                For soprano, clarinet, violin, piano.<br>
+                Duration: 7 minutes - <a href="https://youtu.be/WcxXv2C-8Ws?si=JNegdPeSaZsoKI9c">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Roots (2015)</strong><br>
+                For soprano, flute, violin, piano.<br>
+                Duration: 8 minutes - <a href="https://youtu.be/Pq0gr0SV4QQ?si=h4LP9PL01p2Xmcr6">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>In the Shadow of Rob Ford, Second Version (2014)</strong><br>
+                For soprano, 2 tenors, female chorus, fl, bar sax (ten sax), timp, 2 perc, pno, 2 vln, vla, vcl. Commissioned by Fountain School of Performing Arts, Dalhousie University.<br>
+                Duration: 11 minutes - <a href="https://youtu.be/B8cu1cDXGuc?si=N3OOhukkHs9IDkY4">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Star (2014)</strong><br>
+                For soprano, fl, ob, cl, bsn, 2 tpt, tbn, 2 perc, hp, pno, acc, 2 vln, vla, vcl, db. Commissioned by ICOT Orchestra.<br>
+                Duration: 7 minutes - <a href="https://youtu.be/_g1GSi0ZLx0?si=Tlcv-DJkMijjH5sC">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>In the Shadow of Rob Ford, First Version (2013)</strong><br>
+                For soprano, 2 tenors, female chorus, 3 fl, 2 cl, bsn, bar sax, 2 tpt, tbn, timp, 3perc, pno, hp, 2 vln.<br>
+                Duration: 9 minutes - <a href="https://youtu.be/4YJkb-oWGmw">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Nocturnal (2013)</strong><br>
+                For soprano, chorus, 2121/2110/timp+perc/pno/str. Commissioned by Tirgan Festival.<br>
+                Duration: 5 minutes - <a href="https://youtu.be/ABpgJmOJM24?si=O4EGWqI9ndghDcSw">Watch on YouTube</a>
+            </li>
+        </ul>
+    </section>
+    
+    <section>
+        <div class="solid-line"></div>
+        <h2>ORCHESTRA & LARGE ENSEMBLE</h2>
+        <ul>
+            <li>
+                <strong>Journey Inwards (2020)</strong><br>
+                2(II=Picc)2((II=EH)2((II=BsCl)2(II=Cbn)/4231/timp+2perc/pno/hp/strings.<br>
+                Duration: 10 minutes
+            </li>
+            <li>
+                <strong>Apprehension (2014)</strong><br>
+                2(II=Picc)222/4231/timp+2perc/str. Commissioned by The National Ballet of Canada.<br>
+                Duration: 2 minutes
+            </li>
+            <li>
+                <strong>Symphony in Three Movements (2007)</strong><br>
+                2+picc2+EH2+BsCl2+Cbn/4231/timp+2perc/pno/hp/str<br>
+                Duration: 33 minutes - <a href="https://soundcloud.com/keyan-5/symphony-in-three-movements-ii-scherzo?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Listen on SoundCloud</a>
+            </li>
+            <li>
+                <strong>Scherzo (2004)</strong><br>
+                2222/4231/timp+2perc/str<br>
+                Duration: 4 minutes
+            </li>
+        </ul>
+    </section>
+    
+    <section>
+        <div class="solid-line"></div>
+        <h2>CHAMBER MUSIC</h2>
+        <ul>
+            <li>
+                <strong>Kian in Rainbows (2023)</strong><br>
+                For narrator, flute, bass clarinet, 2 percussion, piano, string quartet, double bass. Commissioned by ICOT Orchestra.<br>
+                Duration: 9 minutes - Listen on <a href="https://open.spotify.com/track/2v14z4n7hTJC9lgzbZLCqg">Spotify</a> or <a href="https://music.apple.com/ca/album/recurrence/1708014181">Apple Music</a>
+            </li>
+            <li>
+                <strong>Streams of the Unconscious with ICOT (2023)</strong><br>
+                For electric guitar and 4 percussion.<br>
+                Duration: 16 minutes - <a href="https://youtu.be/yqZ-Yabl11s?si=6w9oFY7mQce_0WCS">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Nah (2023)</strong><br>
+                For violin, piano. Commissioned by The Rogue Duo.<br>
+                Duration: 4 minutes  - <a href="https://youtu.be/Me_2tojk9l0">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>The Black Fish (2022)</strong><br>
+                For tape, narrator, clarinet, double bass, two percussions & string quartet. Commissioned by The Ton Beau String Quartet.<br>
+                Duration: 40 minutes - Listen on <a href="https://open.spotify.com/album/6eWk5sOHI9LiVOCSwppTAa?go=1&sp_cid=f74f5c0e95054f3f99a8f9f5784119c8&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=3433d4ad309d4786">Spotify</a> or <a href="https://music.apple.com/ca/album/keyan-emami-the-black-fish/1649755197">Apple Music</a>
+            </li>
+            <li>
+                <strong>Canebrake (2022)</strong><br>
+                For clarinet, cello. Commissioned by Scarborough Philharmonic Orchestra.<br>
+                Duration: 2 minutes - <a href="https://music.apple.com/hk/song/canebrake-for-clarinet-and-cello-from-images-feat/1685083369?l=en-GB">Listen on Apple Music</a>
+            </li>
+            <li>
+                <strong>Oasis II (2022)</strong><br>
+                For tape, string quartet. Commissioned by Scarborough Philharmonic Orchestra.<br>
+                Duration: 3 minutes - <a href="https://youtu.be/J0KHDllS-as?si=-QbsjYl7GZiNb5Xy&t=222">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Desperate in Darkness (2021)</strong><br>
+                Arranged for viola, piano. Commissioned by The Rogue Duo.<br>
+                Duration: 3 minutes - <a href="https://www.youtube.com/live/eT6GNcU6QxE?si=dScm0o4Oj85UjgTy&t=1968">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Ecstatic (2021)</strong><br>
+                Arranged for violin, piano. Commissioned by The Rogue Duo.<br>
+                Duration: 4 minutes - <a href="https://www.youtube.com/live/eT6GNcU6QxE?si=w8DRLCbEcQxOJT-a&t=2184">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Caravan Rhapsody with ICOT (2019)</strong><br>
+                For clarinet, bassoon, horn, violin, viola, cello, double bass. Commissioned by Scarborough Philharmonic Orchestra.<br>
+                Duration: 7 minutes - <a href="https://youtu.be/DYjP6YuOjUM?si=7naz7XM3DYyoa1b2">Watch on YouTube</a> 
+            </li>
+            <li>
+                <strong>Rumi Fables with ICOT (2018)</strong><br>
+                For narrator, accordion, piano, percussion, cello. Commissioned by Ladom Ensemble.<br>
+                Duration: 50 minutes - <a href="https://youtu.be/56KzhfEflHc?si=ohdUhZvguPuT2cou">Watch an Excerpt on YouTube</a>
+            </li>
+            <li>
+                <strong>Improvisation No. 1 (2017)</strong><br>
+                For tape, clarinet, cello, piano.<br>
+                Duration: 5 minutes
+            </li>
+            <li>
+                <strong>Pinball - An Unfinished Game (2016)</strong><br>
+                For clarinet, violin, piano.<br>
+                Duration: 7 minutes - <a href="https://vimeo.com/331842512">Watch on Vimeo</a>
+            </li>
+            <li>
+                <strong>Swimming in Darkness (2016)</strong><br>
+                For clarinet, piano.<br>
+                Duration: 10 minutes
+            </li>
+            <li>
+                <strong>Severed (2016)</strong><br>
+                For three drums.<br>
+                Duration: 6 minutes - <a href="https://youtu.be/zv_CWDxYsMs?si=N2zpcXKTy94Vh8b_">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>In the Waves (2016)</strong><br>
+                For piano duet (1 piano, 4 hands).<br>
+                Duration: 9 minutes - <a href="https://youtu.be/skk_eL9U6jU?si=bb6-WbDwmDiBmcxJ">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Swimming in Darkness (2016)</strong><br>
+                For clarinet, piano.<br>
+                Duration: 10 minutes
+            </li>
+            <li>
+                <strong>Dances on the Snow of Damavand (2016)</strong><br>
+                For accordion, piano, percussion, cello. Commissioned by Ladom Ensemble.<br>
+                Duration: 6 minutes - <a href="https://soundcloud.com/keyan-5/dances-on-the-snow-of-damavand?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Listen on SoundCloud</a> 
+            </li>
+            <li>
+                <strong>Open Fist (2015)</strong><br>
+                For string quartet. Commissioned by The Ton Beau String Quartet.<br>
+                Duration: 11 minutes - <a href="https://youtu.be/lEoCwrGpPLQ?si=MUQYWQORlKMvOpjc">Watch on YouTube</a>
+            </li>
+            <li>
+                <strong>Chahargah with ICOT (2014)</strong><br>
+                For tār, piano, tombak, daf. Commissioned by The National Ballet of Canada.<br>
+                Duration: 3 minutes - <a href="https://soundcloud.com/keyan-5/chahargah?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Listen on SoundCloud</a> 
+            </li>
+            <li>
+                <strong>Lament (2014)</strong><br>
+                For santoor, piano, daf, two violins, viola, cello.<br>
+                Duration: 4 minutes
+            </li>
+            <li>
+                <strong>Hey Humans (2012)</strong><br>
+                For four narrators, two violins, viola, cello. Commissioned by Ton Beau String Quartet.<br>
+                Duration: 9 minutes - <a href="https://youtu.be/8r4Tk2PfA4Q?si=0MK1ulYf84fqtVLd">Watch on YouTube</a>  
+            </li>
+            <li>
+                <strong>String Quartet No.2 “Tehran”, Second Version (2011)</strong><br>
+                For two violins, viola, cello.<br>
+                Duration: 14 minutes
+            </li>
+            <li>
+                <strong>String Quartet No.2, First Version (2006)</strong><br>
+                For two violins, viola, cello.<br>
+                Duration: 11 minutes
+            </li>
+            <li>
+                <strong>String Quartet No.1 (2005)</strong><br>
+                For two violins, viola, cello.<br>
+                Duration: 8 minutes
+            </li>
+        </ul>
+    </section>
+    
+
+    <section>
+        <div class="solid-line"></div>
+        <h2>SOLO</h2>
+        <ul>
+            <li>
+                <strong>Sadness in the FACE (2012)</strong><br>
+                For violin. Commissioned by Bijan Sepanji.<br>
+                Duration: 5 minutes
+            </li>
+            <li>
+                <strong>Five Pieces (2011)</strong><br>
+                For piano.<br>
+                Duration: 14 minutes - Listen on <a href="https://open.spotify.com/track/5eDyzXRNgHJF4uixUaCVkx?si=333fc956bfd34f8c">Spotify</a> or <a href="https://music.apple.com/us/album/5-pieces-for-piano-ecstatic/1294027855?i=1294030063">Apple Music</a>
+            </li>
+            <li>
+                <strong>Arbitrary Motion (2007)</strong><br>
+                For piano.<br>
+                Duration: 3 minutes
+            </li>
+            <li>
+                <strong>Invention (2004)</strong><br>
+                For piano.<br>
+                Duration: 3 minutes
+            </li>
+        </ul>
+    </section>
+    
+    <section>
+        <div class="solid-line"></div>
+        <h2>FILM & GAME</h2>
+        <ul>
+            <li>
+                <strong>Naked Identity (2023)</strong><br>
+                Feature Film. Directed by Nasim Naghavi, Amir Ganjavie.<br>
+                Duration: 80 minutes
+            </li>
+            <li>
+                <strong>Theme Music (2020)</strong><br>
+                Commissioned by Bell Media.<br>
+                Duration: 10 minutes
+            </li>
+            <li>
+                <strong>Pendulum (2019)</strong><br>
+                Feature Film. Directed by Amir Ganjavie, Mostafa Azizi.<br>
+                Duration: 5 minutes
+            </li>
+            <li>
+                <strong>Possession (2018)</strong><br>
+                Video Game Music and Sound Design. Game Designed by Justin Li.<br>
+                Duration: 5 minutes
+            </li>
+            <li>
+                <strong>Theme Music (2009)</strong><br>
+                Commissioned by Persian Cultural Heritage TV.<br>
+                Duration: 1 minute
+            </li>
+            <li>
+                <strong>Shirin and Farhad (2009)</strong><br>
+                For Opening Credit.<br>
+                Duration: 4 minutes
+            </li>
+            <li>
+                <strong>Death of Yazdgerd (2008)</strong><br>
+                Theatre. Directed by Pantea Bahram.<br>
+                Duration: 32 minutes
+            </li>
+        </ul>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Keyan Emami - Composer</p>
+    </footer>
+
+</body>
+</html>
