@@ -61,7 +61,7 @@
 
         /* Override for a specific image with class "auto-height" */
         img.auto-height {
-            height: 600px;
+            height: 50%;
         }
 
         #bio {
@@ -107,6 +107,23 @@
             cursor: pointer;
             height: 50px;
         }
+
+            /* Add media query for screens smaller than 768px (typical mobile devices) */
+    @media (max-width: 768px) {
+        section {
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        img {
+            margin-right: 0; /* Remove right margin to center the image */
+            margin-bottom: 20px; /* Add bottom margin to create space between image and text */
+        }
+
+        #toggle-button {
+            margin-top: 20px; /* Add top margin to create space between button and text */
+        }
+    }
+
     </style>
 </head>
 <body>
