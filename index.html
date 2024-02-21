@@ -87,62 +87,123 @@
             color: grey;
         }
 
-        /* Styles for the three-line menu icon */
-        .menu-toggle {
-            display: none; /* Hide the menu toggle by default */
-            cursor: pointer;
-            font-size: 24px;
-            padding: 10px;
-        }
+/* Existing CSS styles */
 
-        .menu-vertical {
-            display: none; /* Hide initially */
-            flex-direction: column; /* Display vertically */
-        }
-        .menu-toggle {
-            cursor: pointer;
-        }
+/* Styling for regular menu */
+.regular-menu {
+    display: block; /* Show by default */
+}
 
-        /* Styles for the navigation menu */
-        @media screen and (max-width: 768px) { /* Adjust the max-width as needed */
-            .menu-toggle {
-                display: block; /* Show the menu toggle on screens smaller than 768px */
-            }
-            nav {
-                display: none; /* Hide the navigation menu by default on smaller screens */
-            }
-        }
-        @media only screen and (max-width: 600px) {
-        nav#navHorizontal {
-            display: none; /* Hide horizontal menu on mobile */
-        }
-        nav#navVertical {
-            display: block; /* Show vertical menu on mobile */
-        }
+.regular-menu a {
+    color: #001f3f; /* Adjust color as needed */
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.regular-menu a:hover {
+    color: #001527; /* Adjust hover color as needed */
+}
+
+/* Styling for mobile menu */
+.mobile-menu {
+    display: none; /* Hide by default */
+    background-color: #fff; /* White background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001; /* Higher z-index to overlay on top of other content */
+    padding-top: 50px; /* Adjust as needed */
+}
+
+.mobile-menu.show {
+    display: block; /* Show mobile menu when 'show' class is applied */
+}
+
+.mobile-menu a {
+    display: block;
+    color: #000; /* Black color for menu items */
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc; /* Add border between menu items */
+}
+
+/* Styling for mobile menu toggle button */
+.menu-toggle-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #001f3f;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px;
+    right: 3%;
+    top: 11%;
+    position: absolute;
+}
+
+/* Styling for close button */
+.close-button {
+    display: none; /* Initially hide the close button */
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    z-index: 1003; /* Ensure the close button is above the menu */
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .menu-toggle-btn {
+        display: none;
     }
+}
+
+@media (max-width: 769px) {
+    .regular-menu {
+        display: none;
+    }
+}
+
+
+
 
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Keyan Emami</h1>
-        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Three-line menu icon -->
-    </header>
-    
-    <nav id="navHorizontal"> <!-- Horizontal navigation menu -->
-        <a href="index.html">Home</a>
-        <a href="bio.html">Biography</a>
-        <a href="works.html">Works</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    
-    <nav class="menu-vertical" id="navVertical"> <!-- Vertical navigation menu -->
-        <a href="index.html">Home</a>
-        <a href="bio.html">Biography</a>
-        <a href="works.html">Works</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header>
+    <h1>Keyan Emami</h1>
+</header>
+
+<!-- Regular Menu -->
+<nav class="regular-menu">
+    <a href="index.html">Home</a>
+    <a href="bio.html">Biography</a>
+    <a href="works.html">Works</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Mobile Menu Toggle Button -->
+<button class="menu-toggle-btn" onclick="toggleMobileMenu()">☰</button>
+<button class="close-button" style="display: none;">×</button>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="bio.html">Biography</a>
+    <a href="works.html">Works</a>
+    <a href="contact.html">Contact</a>
+</div>
 
 <img src="ArashSafavi-2828.jpg" alt="Description of the image" class="auto-height">
 
@@ -305,29 +366,52 @@
 </footer>
 
 <script>
-    function toggleMenu() {
-        var navHorizontal = document.getElementById("navHorizontal");
-        var navVertical = document.getElementById("navVertical");
-        if (navHorizontal.style.display === "block" || navHorizontal.style.display === "") {
-            navHorizontal.style.display = "none";
-            navVertical.style.display = "block";
+    function toggleMobileMenu() {
+        var mobileMenu = document.querySelector('.mobile-menu');
+        var closeButton = document.querySelector('.close-button'); // Select close button
+
+        // Toggle 'show' class to display/hide the mobile menu
+        mobileMenu.classList.toggle('show');
+
+        // If the mobile menu is open, show the close button
+        if (mobileMenu.classList.contains('show')) {
+            closeButton.style.display = 'block';
+            // Add click event listener to the close button
+            closeButton.addEventListener('click', closeMobileMenu);
         } else {
-            navHorizontal.style.display = "block";
-            navVertical.style.display = "none";
+            // If the mobile menu is closed, hide the close button
+            closeButton.style.display = 'none';
+            // Remove click event listener from the close button
+            closeButton.removeEventListener('click', closeMobileMenu);
         }
     }
-    
-    // Close the menu when clicking outside of it
-    window.addEventListener('click', function(e){
-        var navHorizontal = document.getElementById("navHorizontal");
-        var menuToggle = document.querySelector('.menu-toggle');
-        if (!menuToggle.contains(e.target) && !navHorizontal.contains(e.target)) {
-            navHorizontal.style.display = 'none';
-            document.getElementById("navVertical").style.display = 'none';
+
+    // Function to close the mobile menu
+    function closeMobileMenu() {
+        var mobileMenu = document.querySelector('.mobile-menu');
+        // Hide the mobile menu
+        mobileMenu.classList.remove('show');
+        // Hide the close button
+        var closeButton = document.querySelector('.close-button');
+        closeButton.style.display = 'none';
+        // Remove click event listener from the close button
+        closeButton.removeEventListener('click', closeMobileMenu);
+    }
+
+    // Close the mobile menu when clicking outside of it
+    document.body.addEventListener('click', function(event) {
+        var mobileMenu = document.querySelector('.mobile-menu');
+        var menuToggleBtn = document.querySelector('.menu-toggle-btn');
+        // Check if the clicked element is not part of the mobile menu, the menu toggle button, or the close button
+        if (!mobileMenu.contains(event.target) && event.target !== menuToggleBtn && !event.target.classList.contains('close-button')) {
+            mobileMenu.classList.remove('show'); // Hide the mobile menu
+            var closeButton = document.querySelector('.close-button');
+            closeButton.style.display = 'none'; // Hide the close button
+            closeButton.removeEventListener('click', closeMobileMenu); // Remove click event listener from the close button
         }
     });
 </script>
 
+
 </body>
 </html>
-
