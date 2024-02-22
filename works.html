@@ -50,6 +50,16 @@
             padding: 0% 10% 3%;
         }
 
+        h2.title {
+            margin-left: 10%;
+        }
+
+
+        h2.title_last {
+            margin-left: 10%;
+            margin-bottom: 200px;
+        }
+
         img {
             max-width: 50%;
             height: auto;
@@ -225,10 +235,8 @@
     <a href="contact.html">Contact</a>
 </div>
 
-
-    <section id="Discography">
-        
-        <h2>Discography</h2>
+    <h2 onclick="toggleSection('Discography')" style="margin-left: 10%;">Discography</h2>
+    <section id="Discography" hidden="true">
         <p>Explore compositions from three albums—"The Black Fish,' 'Recurrence,' and 'Persian Piano Night"—with studio-recorded performances. Dive into these musical journeys, available now on all major streaming platforms.</p>
 
         <h3>THE BLACK FISH ALBUM</h3>
@@ -257,11 +265,8 @@
         
     </section>
 
-
-    <section id="Writing">
-        <div class="solid-line"></div>
-        
-        <h2>Writing</h2>
+    <h2 onclick="toggleSection('Writing')" style="margin-left: 10%;">Writing</h2>
+    <section id="Writing" hidden="true">
         
         <h3>MUSIC ON THE BORDERLAND: CONTEMPORARY IRANIAN COMPOSERS’ ODYSSEYS</h3>
         <h4>(The University of Toronto Doctoral Research Project)</h4>
@@ -281,6 +286,8 @@
         
     </section>
 
+    <h2 id="compositions-heading" onclick="toggleSection('Compositions')" style="margin-left: 10%; margin-bottom: 300px;">Compositons</h2>
+    <section id="Compositions" hidden="true">
     <section>
         <div class="solid-line"></div>
         <h2>VOCAL/CHORAL</h2>
@@ -557,10 +564,9 @@
             </li>
         </ul>
     </section>
-
-
+</section>
     <footer>
-        <p>&copy; 2023 Keyan Emami - Composer</p>
+        <p>&copy; 2024 Keyan Emami - Composer</p>
     </footer>
 
     <script>
@@ -608,6 +614,20 @@
                 closeButton.removeEventListener('click', closeMobileMenu); // Remove click event listener from the close button
             }
         });
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.hidden = !section.hidden;
+            if (sectionId == "Compositions"){
+                var heading = document.getElementById("compositions-heading");
+                if (heading.style.marginBottom == "0px"){
+                    heading.style.marginBottom = "300px";
+                }else{
+                    heading.style.marginBottom = "0px";
+                }
+
+            }
+        }
+    </script>
     </script>
 
 </body>
