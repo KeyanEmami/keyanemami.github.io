@@ -89,95 +89,122 @@
             color: white;
         }
 
+
+        .solid-line {
+            border-top: 1px solid #000;
+            margin: 20px 0;
+        }
+
         .grey-text {
             color: grey;
         }
-/* Existing CSS styles */
 
-/* Styling for regular menu */
-.regular-menu {
-    display: block; /* Show by default */
-}
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
 
-.regular-menu a {
-    color: #001f3f; /* Adjust color as needed */
-    text-decoration: none;
-    margin: 0 0.5em;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
+        .music-logos {
+            display: flex;
+        }
 
-.regular-menu a:hover {
-    color: #001527; /* Adjust hover color as needed */
-}
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+        }
 
-/* Styling for mobile menu */
-.mobile-menu {
-    display: none; /* Hide by default */
-    background-color: #fff; /* White background */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1001; /* Higher z-index to overlay on top of other content */
-    padding-top: 50px; /* Adjust as needed */
-}
+        /* Override for a specific image with class "auto-height" */
+        img.auto-height {
+            height: auto;
+            max-width: 100%;
+        }
+        /* Existing CSS styles */
 
-.mobile-menu.show {
-    display: block; /* Show mobile menu when 'show' class is applied */
-}
+        /* Styling for regular menu */
+        .regular-menu {
+            display: block; /* Show by default */
+        }
 
-.mobile-menu a {
-    display: block;
-    color: #000; /* Black color for menu items */
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px solid #ccc; /* Add border between menu items */
-}
+        .regular-menu a {
+            color: #001f3f; /* Adjust color as needed */
+            text-decoration: none;
+            margin: 0 0.5em;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
 
-/* Styling for mobile menu toggle button */
-.menu-toggle-btn {
-    display: block;
-    background: none;
-    border: none;
-    color: #001f3f;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0px;
-    right: 3%;
-    top: 35px;
-    position: absolute;
-}
+        .regular-menu a:hover {
+            color: #001527; /* Adjust hover color as needed */
+        }
 
-/* Styling for close button */
-.close-button {
-    display: none; /* Initially hide the close button */
-    position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
-    z-index: 1003; /* Ensure the close button is above the menu */
-    background: none;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        /* Styling for mobile menu */
+        .mobile-menu {
+            display: none; /* Hide by default */
+            background-color: #fff; /* White background */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1001; /* Higher z-index to overlay on top of other content */
+            padding-top: 50px; /* Adjust as needed */
+        }
 
-@media (min-width: 769px) {
-    .menu-toggle-btn {
-        display: none;
-    }
-}
+        .mobile-menu.show {
+            display: block; /* Show mobile menu when 'show' class is applied */
+        }
 
-@media (max-width: 769px) {
-    .regular-menu {
-        display: none;
-    }
-}
+        .mobile-menu a {
+            display: block;
+            color: #000; /* Black color for menu items */
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc; /* Add border between menu items */
+        }
+
+        /* Styling for mobile menu toggle button */
+        .menu-toggle-btn {
+            display: block;
+            background: none;
+            border: none;
+            color: #001f3f;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0px;
+            right: 3%;
+            top: 35px;
+            position: absolute;
+        }
+
+        /* Styling for close button */
+        .close-button {
+            display: none; /* Initially hide the close button */
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 20px; /* Adjust the right position as needed */
+            z-index: 1003; /* Ensure the close button is above the menu */
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (min-width: 769px) {
+            .menu-toggle-btn {
+                display: none;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .regular-menu {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -207,20 +234,25 @@
 </div>
 
     <section id="bio">
-        <h3>EMAIL Keyan</h3>
-        <p>You can contact Keyan Emami via email at keyanemami@gmail.com</p>
+        <h3>Get in Touch</h3>
+        <p>Thank you for visiting my website! If you have any questions or comments, feel free to reach out to me via email at <a href="mailto:keyanemami@gmail.com" target="_blank">keyanemami@gmail.com</a>. I'd love to hear from you!</p>
+        <div class="solid-line"></div>
 
-        <h3>COMMISSIONING</h3>
-        <p>I enthusiastically welcome commissions from individual musicians, ensembles, concert presenters, music producers, and music supervisors for a diverse range of projects – whether it's your next concert, film, animation, or game. Explore the possibilities and let's create something extraordinary together. For more details on rates and options, please refer to the Canadian League of Composers’ commissioning rates. Want to optimize costs? Consider joint-commissioning with other musicians or ensembles to share the experience and expenses while still achieving a remarkable outcome.'</p>
+        <h3>Commissioning Opportunities</h3>
+        <p>I enthusiastically welcome commissions from individual musicians, ensembles, concert presenters, music producers, and music supervisors for a diverse range of projects – whether it's your next concert, film, animation, or game. Explore the possibilities and let's create something extraordinary together. For more details on rates and options, please refer to the 'Canadian League of Composers’ <a href="http://www.composition.org/commissioning-rates/" target="_blank">commissioning rates</a>. Want to optimize costs? Consider joint-commissioning with other musicians or ensembles to share the experience and expenses while still achieving a remarkable outcome.</p>
+        <div class="solid-line"></div>
 
-        <h3>PRIVATE MUSIC INSTRUCTION & RCM EXAMINER</h3>
-        <p>I offer exclusive private music lessons both in-person at my professional music studio and through video conferencing. Additionally, I serve as an examiner at the Royal Conservatory College of Examiners.</p>
-
+        <h3>Music Lessons</h3>
+        <p>I offer exclusive private music lessons both in-person at my professional music studio and through video conferencing. Whether you're looking to refine your skills, prepare for performances, or prepare effectively for RCM exams, I'm here to help. As an RCM-Certified Teacher and an RCM Examiner at the Royal Conservatory College of Examiners, I bring a wealth of experience and insight to guide you on your musical journey. For more information or to book a lesson, <a href="https://www.keymusicstudio.com/contact" target="_blank">click here</a>.</p>
+        <div class="solid-line"></div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Keyan Emami - Composer</p>
+            <div class="copyright">
+                <p>&copy; Keyan Emami. All Rights Reserved.</p>
+            </div>
     </footer>
+
     <script>
         function toggleMobileMenu() {
             var mobileMenu = document.querySelector('.mobile-menu');

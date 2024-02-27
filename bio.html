@@ -47,22 +47,22 @@
         }
 
         section {
-            padding: 10% 10% 10%;
+            padding: 10% 0% 10%;
             display: flex;
             justify-content: space-around;
         }
 
         img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
             display: block;
-            margin-right: 45px;
         }
 
         /* Override for a specific image with class "auto-height" */
         img.auto-height {
             height: 50%;
             max-width: 500px;
+            margin-right: 10px;
         }
 
         #bio {
@@ -96,6 +96,15 @@
             color: grey;
         }
 
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .music-logos {
+            display: flex;
+        }
+
         #long-bio {
             display: none;
         }
@@ -127,90 +136,90 @@
 
         /* Existing CSS styles */
 
-/* Styling for regular menu */
-.regular-menu {
-    display: block; /* Show by default */
-}
+        /* Styling for regular menu */
+        .regular-menu {
+            display: block; /* Show by default */
+        }
 
-.regular-menu a {
-    color: #001f3f; /* Adjust color as needed */
-    text-decoration: none;
-    margin: 0 0.5em;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
+        .regular-menu a {
+            color: #001f3f; /* Adjust color as needed */
+            text-decoration: none;
+            margin: 0 0.5em;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
 
-.regular-menu a:hover {
-    color: #001527; /* Adjust hover color as needed */
-}
+        .regular-menu a:hover {
+            color: #001527; /* Adjust hover color as needed */
+        }
 
-/* Styling for mobile menu */
-.mobile-menu {
-    display: none; /* Hide by default */
-    background-color: #fff; /* White background */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1001; /* Higher z-index to overlay on top of other content */
-    padding-top: 50px; /* Adjust as needed */
-}
+        /* Styling for mobile menu */
+        .mobile-menu {
+            display: none; /* Hide by default */
+            background-color: #fff; /* White background */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1001; /* Higher z-index to overlay on top of other content */
+            padding-top: 50px; /* Adjust as needed */
+        }
 
-.mobile-menu.show {
-    display: block; /* Show mobile menu when 'show' class is applied */
-}
+        .mobile-menu.show {
+            display: block; /* Show mobile menu when 'show' class is applied */
+        }
 
-.mobile-menu a {
-    display: block;
-    color: #000; /* Black color for menu items */
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px solid #ccc; /* Add border between menu items */
-}
+        .mobile-menu a {
+            display: block;
+            color: #000; /* Black color for menu items */
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc; /* Add border between menu items */
+        }
 
-/* Styling for mobile menu toggle button */
-.menu-toggle-btn {
-    display: block;
-    background: none;
-    border: none;
-    color: #001f3f;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0px;
-    right: 3%;
-    top: 35px;
-    position: absolute;
-}
+        /* Styling for mobile menu toggle button */
+        .menu-toggle-btn {
+            display: block;
+            background: none;
+            border: none;
+            color: #001f3f;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0px;
+            right: 3%;
+            top: 35px;
+            position: absolute;
+        }
 
-/* Styling for close button */
-.close-button {
-    display: none; /* Initially hide the close button */
-    position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
-    z-index: 1003; /* Ensure the close button is above the menu */
-    background: none;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        /* Styling for close button */
+        .close-button {
+            display: none; /* Initially hide the close button */
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 20px; /* Adjust the right position as needed */
+            z-index: 1003; /* Ensure the close button is above the menu */
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-@media (min-width: 769px) {
-    .menu-toggle-btn {
-        display: none;
-    }
-}
+        @media (min-width: 769px) {
+            .menu-toggle-btn {
+                display: none;
+            }
+        }
 
-@media (max-width: 769px) {
-    .regular-menu {
-        display: none;
-    }
-}
+        @media (max-width: 769px) {
+            .regular-menu {
+                display: none;
+            }
+        }
 
     </style>
 </head>
@@ -253,11 +262,11 @@
         <!-- Long Bio (initially hidden) -->
         <div id="long-bio">
             <h2>Long Bio</h2>
-            <p>Keyan Emami, a JUNO-nominated Canadian-Persian composer and dedicated music educator, is renowned for his contemporary extended tonal language and innovative sonic texture, often drawing inspiration from Persian literature and various musical forms. His compositions for orchestra, voice, and piano have been widely performed by leading orchestras, ensembles, and musicians both in Canada and internationally, and have been featured at prestigious venues such as the Four Seasons Centre, Toronto Centre for the Arts, Aga Khan Museum, and Roy Thompson Hall.</p>
+            <p>Keyan Emami, a JUNO-nominated Canadian-Persian composer and dedicated music educator, is renowned for his contemporary extended tonal language and innovative sonic texture, often drawing inspiration from Persian literature and various musical forms. His compositions for orchestra, voice, and piano have been widely performed by leading orchestras, ensembles, and musicians both in Canada and internationally, and have been featured at prestigious venues such as the Four Seasons Centre, Toronto Centre for the Arts, Aga Khan Museum, and Roy Thomson Hall.</p>
 
             <p>Recipient of multiple grants, including the Canada Council for the Arts Grant, Ontario Arts Council Grant, and Toronto Arts Council Grant, Keyan is also an Associate Composer at the Canadian Music Centre, and a member of the Canadian League of Composers and SOCAN. As the artistic director, co-founder, and co-composer at ICOT, a non-profit organization that has produced over 60 new works since 2011, Keyan demonstrates his commitment to bridging cultures through music.</p>
 
-            <p>Keyan completed his doctorate in music composition at the University of Toronto in 2020. His academic journey, including a B.Eng. in Polymer Engineering and an M.Mus. in Music Composition, earned with distinction, reflects his multidimensional approach to creativity. Notably, he was awarded the Best Master’s Thesis Prize for his Symphony in Three Movements. His principal teachers during academic studies were Christos Hatzis, Alexander Rapoport, and Norbert Palej, alongside significant private study with Mehran Rouhani and Ahmad Pejman.</p>
+            <p>Keyan completed his doctorate in music composition at the University of Toronto in 2020. His academic journey, including a B.Eng. in Polymer Engineering and an M.Mus. in Music Composition, earned with distinction, reflects his multidimensional approach to creativity. Notably, he was awarded the Best Master’s Thesis Prize for his Symphony in Three Movements. His principal teachers during academic studies were Christos Hatzis, Alexander Rapoport, and Norbert Palej, alongside significant private study with Sharif Lotfi, Mehran Rouhani and Ahmad Pejman.</p>
 
             <p>Keyan currently serves as an RCM Certified Music Teacher and Adjudicator at the Royal Conservatory of Music College of Examiners, following previous academic positions at the University of Toronto and Tehran University of Art. Additionally, as the founder and academic manager of Key Music, he offers exclusive private piano, composition, and theory lessons at his professional music studio in Newmarket, both in-person and via video conferencing, ensuring personalized instruction and mentorship. Explore more at www.keyanemami.com.</p>
 
@@ -268,7 +277,15 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Keyan Emami - Composer</p>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>&copy; Keyan Emami. All Rights Reserved.</p>
+            </div>
+            <div class="music-logos">
+                <a href="https://open.spotify.com/artist/797dGrTJlnALKreb1WRafm"><img src="spotify.png" alt="Spotify Logo"></a>
+                <a href="https://music.apple.com/us/artist/keyan-emami/1294030212"><img src="apple-music.png" alt="Apple Music Logo"></a>
+            </div>
+        </div>
     </footer>
 
     <script>

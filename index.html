@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyan Emami</title>
+    <title>Keyan Emami - Composer</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -51,7 +51,6 @@
             max-width: 50%;
             height: auto;
             display: block;
-            margin: 10px auto; /* Adjust margin */
         }
 
         /* Override for a specific image with class "auto-height" */
@@ -87,95 +86,106 @@
             color: grey;
         }
 
-/* Existing CSS styles */
+        .solid-line {
+            border-top: 1px solid #000;
+            margin: 20px 0;
+        }
 
-/* Styling for regular menu */
-.regular-menu {
-    display: block; /* Show by default */
-}
+        /* Existing CSS styles */
 
-.regular-menu a {
-    color: #001f3f; /* Adjust color as needed */
-    text-decoration: none;
-    margin: 0 0.5em;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
+        /* Styling for regular menu */
+        .regular-menu {
+            display: block; /* Show by default */
+        }
 
-.regular-menu a:hover {
-    color: #001527; /* Adjust hover color as needed */
-}
+        .regular-menu a {
+            color: #001f3f; /* Adjust color as needed */
+            text-decoration: none;
+            margin: 0 0.5em;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
 
-/* Styling for mobile menu */
-.mobile-menu {
-    display: none; /* Hide by default */
-    background-color: #fff; /* White background */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1001; /* Higher z-index to overlay on top of other content */
-    padding-top: 50px; /* Adjust as needed */
-}
+        .regular-menu a:hover {
+            color: #001527; /* Adjust hover color as needed */
+        }
 
-.mobile-menu.show {
-    display: block; /* Show mobile menu when 'show' class is applied */
-}
+        /* Styling for mobile menu */
+        .mobile-menu {
+            display: none; /* Hide by default */
+            background-color: #fff; /* White background */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1001; /* Higher z-index to overlay on top of other content */
+            padding-top: 50px; /* Adjust as needed */
+        }
 
-.mobile-menu a {
-    display: block;
-    color: #000; /* Black color for menu items */
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px solid #ccc; /* Add border between menu items */
-}
+        .mobile-menu.show {
+            display: block; /* Show mobile menu when 'show' class is applied */
+        }
 
-/* Styling for mobile menu toggle button */
-.menu-toggle-btn {
-    display: block;
-    background: none;
-    border: none;
-    color: #001f3f;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0px;
-    right: 3%;
-    top: 35px;
-    position: absolute;
-}
+        .mobile-menu a {
+            display: block;
+            color: #000; /* Black color for menu items */
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc; /* Add border between menu items */
+        }
 
-/* Styling for close button */
-.close-button {
-    display: none; /* Initially hide the close button */
-    position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
-    z-index: 1003; /* Ensure the close button is above the menu */
-    background: none;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        /* Styling for mobile menu toggle button */
+        .menu-toggle-btn {
+            display: block;
+            background: none;
+            border: none;
+            color: #001f3f;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0px;
+            right: 3%;
+            top: 35px;
+            position: absolute;
+        }
 
-@media (min-width: 769px) {
-    .menu-toggle-btn {
-        display: none;
-    }
-}
+        /* Styling for close button */
+        .close-button {
+            display: none; /* Initially hide the close button */
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 20px; /* Adjust the right position as needed */
+            z-index: 1003; /* Ensure the close button is above the menu */
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
 
-@media (max-width: 769px) {
-    .regular-menu {
-        display: none;
-    }
-}
+        .music-logos {
+            display: flex;
+        }
 
 
+        @media (min-width: 769px) {
+            .menu-toggle-btn {
+                display: none;
+            }
+        }
 
+        @media (max-width: 769px) {
+            .regular-menu {
+                display: none;
+            }
+        }
 
     </style>
 </head>
@@ -207,20 +217,30 @@
 
 <img src="ArashSafavi-2828.jpg" alt="Description of the image" class="auto-height">
 
+
 <section id="news">
+    <h2>Review Highights</h2>
     <p>"...a multi-stylistic masterpiece…Emami’s masterful ability to combine…symphonic, jazz, Persian, and contemporary..."</p>
-        <p><span class="grey-text">— Tiina Kiik, THE WHOLE NOTE MAGAZINE</span> on The Black Fish</p>
-    
+    <p><span class="grey-text">— Tiina Kiik, THE WHOLE NOTE MAGAZINE, on </span><a href="https://linktr.ee/theblackfish">The Black Fish</a></p>
+    <br>
+    <p>"Keyan Emami's 'Kian in Rainbows' gleams with color and texture, interspersing musical ideas effectively with text. The lush sounds combine with a dark edge suited to the tragic event that this work memorializes."</p>
+    <p><span class="grey-text">— Helen Pridmore, MUSICWORKS MAGAZINE, on </span><a href="https://music.apple.com/ca/album/recurrence/1708014181">Kian in Rainbows</a></p>
+    <br>
     <p>"A remarkable piece…Emami's music eloquently and poignantly evokes...a dark and moving..."</p>
-    <p><span class="grey-text">— Victor Lazarov, LA SCENA MUSICALE</span> on Kian in Rainbows</p>
+    <p><span class="grey-text">— Victor Lazarov, LA SCENA MUSICALE, on </span><a href="https://music.apple.com/ca/album/recurrence/1708014181">Kian in Rainbows</a></p>
+    <br>
+    <p>“Keyan Emami's expressive language in '5 Pieces for Piano,' particularly evident in 'In Search of Elusive Memories,' 'Desperate in Darkness,' and 'Ecstatic,' explores diverse dimensions of crafting compositions inspired by Persian motifs and rhythms...This innovative interpretation of Persian piano music redefines conventional norms, offering a fresh perspective on the genre.”</p>
+    <p><span class="grey-text">— Arvin Sedaghatkish, Noise Reviews, on </span><a href="https://open.spotify.com/track/5eDyzXRNgHJF4uixUaCVkx?si=946dc307c1574478">5 Pieces for Piano</a></p>
     
-    <h2>News</h2>
+    <div class="solid-line"></div>
+
+    <h2>WHAT'S NEW</h2>
 
     <h3>January 29 2024</h3>
         <p>Excited to perform 'The Black Fish' with The Black Fish Ensemble this Wednesday, January 31st, at the Canadian Opera Company, Richard Bradshaw Amphitheatre!</p>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcanadianoperacompany%2Fposts%2Fpfbid06yiNPKWrtvcD4Vnzzx8xL3omGAaDHF87fyZifMAJtgyaW2UAiqaJZbsL545J2NfMl&show_text=true&width=500" width="500" height="718" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <p>Also, check out this video excerpt of 'The Black Fish' to get a sneak peek of what's to come!
-            https://youtu.be/c_Hhk8RRqLM?si=U82gio5CxNDpchfn </p>
+            <p>Also, check out this video excerpt of 'The Black Fish' to get a sneak peek of what's to come!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c_Hhk8RRqLM?si=U82gio5CxNDpchfn" frameborder="0" allowfullscreen></iframe>
     
     <h3>January 21 2024</h3>
         <p>Neekta's Fundraiser Concert Success</p>
@@ -230,7 +250,7 @@
             <p>Help Neekta give the gift of clean water. 100% of every donation raised will fund charity: water's work providing access to clean water projects around the world. <a href="https://www.charitywater.org/neekta#">Donate here</a></p>
             
     <h3>January 2 2024</h3>
-    <p>Announcing My Role as <strong>Examiner</strong> at the <strong>Royal Conservatory College of Examiners</strong></p>
+    <p>Announcing My Role as an<strong>RCM Examiner</strong> at the <strong>Royal Conservatory College of Examiners</strong></p>
     <img src="1_Keyan_PhotoBackgroundPiano.jpg" alt="Keyan Photo Background Piano" class="auto-height">
     <p>Starting in winter 2023, I'm honored to join the esteemed Royal Conservatory of Music College of Examiners as an Examiner. Looking forward to engaging with and evaluating numerous candidates hailing from North America and Europe.</p>
 
@@ -248,44 +268,47 @@
     <p><strong>Video Release: "Streams of the Unconscious"</strong></p>
     <p>I'm thrilled to share the live performance video of "Streams of the Unconscious" for electric guitar and percussion quartet, co-composed by myself and ICOT. This special project, commissioned by Soundstreams, allowed us to delve into our musical identities as diaspora artists.</p>
     <p>Huge thanks to the talented performers Yang Chen, Andrew Noseworthy, Tim Francom, as well as TorQ Percussion Quartet members Richard Burrows and Jamie Drake, who brought this mesmerizing composition to life.</p>
-    <p>Watch the video here: <a href=https://youtu.be/yqZ-Yabl11s?si=EtAM54wdhs4UUZXs>Link</a></p>
+    <p>Watch the video here:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yqZ-Yabl11s?si=EtAM54wdhs4UUZXs" frameborder="0" allowfullscreen></iframe>
 
     <h3>July 16, 2023</h3>
     <p><strong>My Debut Solo Album Launch!</strong></p>
-    <p>Join us this Wednesday, July 19th, at 7:30 pm for The Black Fish Album Launch in Mississauga! Experience an unforgettable concert featuring my JUNO-nominated composition “The Black Fish” by talented musicians, followed by a cozy reception at the same venue. We'd love to see you there and say hi!</p>
+    <p>Join us this Wednesday, July 19th, at 7:30 pm for The Black Fish Album Launch at the Riverwood Conservancy in Mississauga! Experience an unforgettable concert featuring my JUNO-nominated composition “The Black Fish” by talented musicians, followed by a cozy reception at the same venue. We'd love to see you there and say hi!</p>
     <p>Special thanks to Cheryl Duvall and The Chamber Music Society of Mississauga for graciously hosting us and the incredible Black Fish Ensemble.</p>
     <p>Come celebrate with us at The Black Fish Album Launch!</p>
 
     <h3>May 26 2023</h3>
     <p><strong>Recording Session of "Kian in Rainbows" in Toronto</strong></p>
-    <p>I'm excited to share a behind-the-scenes glimpse into the recording session of "Kian in Rainbows" in Toronto on May 19. This captivating composition, crafted by myself, brought together a talented team of musicians and professionals to bring the music to life</p>
+    <p>I'm excited to share a behind-the-scenes glimpse into the recording session of "Kian in Rainbows" in Toronto on May 19. This captivating composition, crafted by myself, brought together a talented team of musicians and professionals to bring the music to life.</p>
     <img src="3_Kian_GroupPhotos.jpg" alt="Group Photo">
+    <em>Meet the Team: ICOT Chamber Orchestra & Production Crew</em>
     <p>Team Members:</p>
     <p>Standing (L-R):
-        Beverly Johnston (percussion)
-        Peter Stoll (bass clarinet)
-        Les Allt (flute)
-        Sharon Wei (viola)
-        Keyan Emami (composer, narrator)
-        Maziar Heidari (conductor)
-        Brian Manker (cello)
-        Jonathan Crow (violin)
-        Pouya Hamidi (recording engineer)
+        Beverly Johnston (percussion),
+        Peter Stoll (bass clarinet),
+        Les Allt (flute),
+        Sharon Wei (viola),
+        Keyan Emami (composer, narrator),
+        Maziar Heidari (conductor),
+        Brian Manker (cello),
+        Jonathan Crow (violin),
+        Pouya Hamidi (recording engineer),
         Scott Peterson (bass)</p>
         <p>Sitting (L-R):
-        Ryan Scott (percussion)
-        Andrew Wan (violin)
-        Saman Shahi (piano)
+        Ryan Scott (percussion),
+        Andrew Wan (violin),
+        Saman Shahi (piano),
         Jeremy VanSlyke (producer)</p>
     <p>Stay tuned for more updates on the release of "Kian in Rainbows" and the upcoming album!</p>
 
 
     <h3>April 6 2023</h3>
-    <p><strong>world premiere of "Streams of the Unconscious"</strong></p>
+    <p><strong>World Premiere of "Streams of the Unconscious"</strong></p>
     <p>I'm thrilled to invite you to the world premiere of "Streams of the Unconscious," my latest co-composition with ICOT. Join us next Thursday, April 13th, at the Heliconian Club in Toronto for an unforgettable evening of music and exploration.</p>
     <p>This captivating piece, commissioned and produced by Soundstreams, delves into the mind of a displaced person, exploring the ongoing identity battle of a refugee, the constant daydreaming of an immigrant, and their collective efforts to negotiate new meaning in the intersectionality of their lives. Featuring the talented members of TorQ Percussion Quartet and Andrew Noseworthy on electric guitar, "Streams of the Unconscious" promises to be an immersive experience like no other.</p>
     <p>Save the date and join us for an evening of blurred realities and thought-provoking exploration. I can't wait for you all to experience it firsthand!</p>
     <img src="4_Blurred Realities Concert2.jpg" alt="Blurred Realities Concert">
+    <em>With former Governor General of Canada, Ms. Adrienne Clarkson at Heliconian Club</em>
     <p>We were pleasantly surprised and honored to have a very special guest among us at the concert: The former Governor General of Canada, Ms. Adrienne Clarkson!</p>
 
     <h3>March 11 2023</h3>
@@ -310,12 +333,13 @@
     <p>Exciting News Alert: My debut album, "The Black Fish," is now available! 
         Embark on a captivating musical journey as you dive into the mesmerizing sounds of "The Black Fish," streaming and ready for purchase on all major platforms. Don't miss out—experience the magic today!
         </p>
-    <p>Listen to the album here: <a href=https://linktr.ee/theblackfish>theblackfish</a></p>
+    <p>Listen to the album <a href=https://linktr.ee/theblackfish>here.</a></p>
 
     <h3>September 24 2022</h3>
     <p><strong>My Piano Compositions Featured at TSO's 100th Anniversary Open House!</strong></p>
     <img src="9_TSO.JPG" alt="TSO">
-    <p>Delighted to announce that my piano compositions will be featured at the Toronto Symphony Orchestra’s 100th anniversary open house on Saturday, September 24th, at the iconic Roy Thompson Hall!</p>
+    <em>With ICOT directors Maziar and Saman at Roy Thomson Hall</em>
+    <p>Delighted to announce that my piano compositions will be featured at the Toronto Symphony Orchestra’s 100th anniversary open house on Saturday, September 24th, at the iconic Roy Thomson Hall!</p>
 
     <h3>September 17 2022</h3>
     <p><strong>Experience 'Images' with Scarborough Philharmonic Orchestra and Odin Quartet</strong></p>
@@ -324,46 +348,60 @@
     <h3>July 26 2022</h3>
     <p><strong>‘The Black Fish’ at Toronto Palais Royal</strong></p>
     <p>Experience 'The Black Fish' live at Palais Royal on August 9th! Join us for the third mesmerizing performance in Toronto by The Black Fish Ensemble. Don't miss this enchanting musical journey against the backdrop of breathtaking lake views—it's an experience you won't want to miss!</p>
-    <p>An Immersive 360 Live Performance of ‘The Black Fish’</p>
-    <p><a href=https://youtu.be/00rcgdMhLQE?si=wGIJS08M-VNK1wfK>youtu.be</a></p>
+    <p>An Immersive 360 Live Performance of ‘The Black Fish’.</p>
+    <p>You can watch it <a href=https://youtu.be/00rcgdMhLQE?si=wGIJS08M-VNK1wfK>here.</a></p>
 
     <h3>July 11 2022</h3>
     <p><strong>‘The Black Fish’ at Meridian Arts Centre</strong></p>
     <img src="10_TirganTBF.jpg" alt="Tirgan TBF">
+    <em>With The Black Fish Ensemble at Tirgan Festival</em>
     <p>Immerse Yourself in an Unforgettable Musical Journey: Our Exclusive Performance at the Tirgan Festival on July 18 at Meridian Arts Centre Marks the Second Chapter of 'The Black Fish,' Thanks to the Incredible Musicians of The Black Fish Ensemble.</p>
     
     <h3>May 11 2022</h3>
     <p><strong>World Premiere of The Black Fish at Aga Khan Auditorium on May 27</strong></p>
     <img src="11_AgaKhanTBF1.jpg" alt="AgaKhan">
+    <em>With The Black Fish Ensemble at Aga Khan</em>
     <p>Embark on a musical odyssey at the world premiere of 'The Black Fish' on May 27 at Aga Khan Auditorium. This avant-garde work promises an evening of enchantment with its groundbreaking fusion of genres. Join us for this historic event. Limited tickets are available.</p>
 
     <h3>November 27 2021</h3>
     <p><strong>Recording ‘The Black Fish’ at Revolution Studio</strong></p>
     <img src="12_RecodingTBF.jpg" alt="Recoding TBF">
+    <em>With Roberto and Pouya at Revolution Studio </em>
     <p>Join me behind the scenes as we craft the captivating sounds of 'The Black Fish' at Revolution Studio on November 26th and 27th, alongside the talented JUNO-nominated sound engineer Pouya Hamidi and esteemed producer Roberto Occhipinti.</p>
 
     <h3>September 27 2021</h3>
     <p>I am pleased to extend my sincere appreciation to the Ontario Arts Council, Toronto Arts Council, and Canada Council for the Arts for their generous support of my work, 'The Black Fish.' This three-movement, forty-minute composition, commissioned by The Ton Beau String Quartet, blends narrator, chamber ensemble, and electronics to create a captivating musical experience. Their invaluable assistance has played a pivotal role in bringing this project to fruition.</p>
-    <p>The Black Fish Ensemble:</p>
     <img src="13_TBF_GroupPhoto.JPG" alt="Group Photo">
+    <em>With The Black Fish Ensemble at OBJX Studio</em>
+    <p>The Black Fish Ensemble:</p>
     <p>Back Row (L-R):</p>
-    <p>Majd Sekkar (clarinet)
-        Alex McLeod (viola)
-        Keyan Emami (composer, electronics, narrator)
-        Bijan Sepanji (violin)
+    <p>Majd Sekkar (clarinet),
+        Alex McLeod (viola),
+        Keyan Emami (composer, electronics, narrator),
+        Bijan Sepanji (violin),
         Andrew Downing (bass)
         </p>
     <p>Front Row (L-R):</p>
-    <p>Sarah Steeves (cello)
-        Louis Pino (percussion)
-        Patrick Goodwin (violin)
+    <p>Sarah Steeves (cello),
+        Louis Pino (percussion),
+        Patrick Goodwin (violin),
         Naoko Tsujita (percussion)
         </p>
 </section>
 
 <footer>
-    <p>&copy; 2024 Keyan Emami - Composer</p>
+    <div class="footer-content">
+        <div class="copyright">
+            <p>&copy; Keyan Emami. All Rights Reserved.</p>
+        </div>
+        <div class="music-logos">
+            <a href="https://open.spotify.com/artist/797dGrTJlnALKreb1WRafm"><img src="spotify.png" alt="Spotify Logo"></a>
+            <a href="https://music.apple.com/us/artist/keyan-emami/1294030212"><img src="apple-music.png" alt="Apple Music Logo"></a>
+        </div>
+    </div>
 </footer>
+
+
 
 <script>
     function toggleMobileMenu() {
